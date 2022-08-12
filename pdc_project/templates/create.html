@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CouchProducts</title>
+    <style>
+      body {
+        background-image: url("KHUDI.jpeg");
+        background-size: cover;
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+        font-weight: bolder;
+      }
+      /* body {
+            background-image: url("company-database.jpg");
+            } */
+      .input_field {
+        /* customize the input tag with lighter font and some padding*/
+        color: var(--icon_color);
+        background-color: inherit;
+        width: 90%;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+      #halwa {
+        width: fit-content;
+      }
+      #down {
+        width: 100%;
+        height: auto;
+      }
+      #create {
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/main.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Couch Datebase!</h1>
+    <p>Create new Employees with their Details</p>
+
+    <form name="add_product" id="add_product">
+      <fieldset id="halwa">
+        <legend>New Employee</legend>
+        <label for="rank">Rank:</label><br />
+        <input type="number" name="rank" id="rank" min="0" /><br />
+
+        <label for="name">Name:</label><br />
+        <input id="name" type="text" name="name" /><br />
+
+        <label for="sym">Symbol:</label><br />
+        <input id="sym" type="text" name="sym" /><br />
+
+        <label for="emp_count">Employees count:</label><br />
+        <input id="emp_count" type="number" name="emp_count" /><br />
+
+        <label for="price">Price(USD):</label><br />
+        <input id="price" type="number" name="price" /><br />
+
+        <label for="country">Country:</label><br />
+        <input id="country" type="text" name="country" /><br />
+
+        <input type="submit" id="create" value="Create" />
+      </fieldset>
+    </form>
+    <form name="products" id="products">
+      <fieldset id="halwa">
+        <legend>My products</legend>
+        <div id="product_count">You have <span>0</span> Product(s).</div>
+        <ul id="my_products"></ul>
+      </fieldset>
+    </form>
+    <img
+      id="down"
+      src="taubah.jpg"
+      alt="load nhi hou rhi met acha lgwao bhai"
+    />
+  </body>
+</html>
